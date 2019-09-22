@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <link rel="stylesheet" href="style.css"> 
       <title>Calculate Restaurant Bill</title>
       <script>
 	  
@@ -51,21 +50,21 @@
       </script>
    </head>
    <body>
-        
-            <h2>Maitre D</h2>
-             <p>Please enter Amount($) & Tip Rate(%)</p>
-            <main>
-               <br>
-               <br>
-               <table>
-              <tr>
+   <center>
+      <h2>Maitre D</h2>
+      <p>Please enter Amount($) & Tip Rate(%)</p>
+      <main>
+         <br>
+         <br>
+         <table>
+            <tr>
                <td colspan="2">
                   <label for="total">Total&nbsp: $ </label>
                   <input id="total" type="text" class="total-field" value="" placeholder="0.00">
                </td>
-               </tr>
-            
-               <tr>
+            </tr>
+            <tr/>
+            <tr>
                <td>
                   <label>Tip&nbsp&nbsp&nbsp: $ <span id="tip">0.00</span></label>
                </td>
@@ -75,26 +74,27 @@
                   <input id="rate" type="text" class="text-field" value="" placeholder="0.00">
                   <i>	
                </td>
-               </tr>
-               <tr>
+            </tr>
+            <tr>
                <td>
                   <label>Tax&nbsp&nbsp&nbsp: $ <span id="tax">0.00</span> </label>
                </td>
-              </tr>
-            
-               <tr>
+            </tr>
+            <tr/>
+            <tr/>
+            <tr>
                <td>
                   <label> <b> Grand Total&nbsp: $ <span id="grand-total">0.00</span> </b> </label>
                </td>
-               </tr>
-              </table>
-              <br>
-              <section>
-              <button id="calculate" onclick="calculateBillWithTaxAndTip()" ><em>Calculate</em></button>
-              &nbsp &nbsp &nbsp
-             <button id="reset" onclick="reset()"><em>Reset</em></button>
-              </section>
-          </main>
-        
+            </tr>
+         </table>
+         <br>
+         <section>
+            <button id="calculate" onclick="calculateBillWithTaxAndTip()" ><em>Calculate</em></button>
+            &nbsp &nbsp &nbsp
+            <button id="reset" onclick="reset()"><em>Reset</em></button>
+         </section>
+      </main>
+	  </center>
    </body>
 </html>
