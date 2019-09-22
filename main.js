@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <title>Calculate Restaurant Bill</title>
-      <script>
+  <script>
 	  
 		// Constants
          const TAX_RATE = 5.5;
@@ -48,54 +44,3 @@
          document.querySelector('#grand-total').innerHTML = ZERO.toFixed(2);
          }
       </script>
-   </head>
-   <body>
-   <center>
-      <h2>Maitre D</h2>
-      <p>Please enter Amount($) & Tip Rate(%)</p>
-      <main>
-         <br>
-         <br>
-         <table>
-            <tr>
-               <td colspan="2">
-                  <label for="total">Total&nbsp: $ </label>
-                  <input id="total" type="text" class="total-field" value="" placeholder="0.00">
-               </td>
-            </tr>
-            <tr/>
-            <tr>
-               <td>
-                  <label>Tip&nbsp&nbsp&nbsp: $ <span id="tip">0.00</span></label>
-               </td>
-               <td>
-                  <i>
-                  <label for="rate">Rate: % </label>
-                  <input id="rate" type="text" class="text-field" value="" placeholder="0.00">
-                  <i>	
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <label>Tax&nbsp&nbsp&nbsp: $ <span id="tax">0.00</span> </label>
-               </td>
-            </tr>
-            <tr/>
-            <tr/>
-            <tr>
-               <td>
-                  <label> <b> Grand Total&nbsp: $ <span id="grand-total">0.00</span> </b> </label>
-               </td>
-            </tr>
-         </table>
-         <br>
-         <section>
-            <button id="calculate" onclick="calculateBillWithTaxAndTip()" ><em>Calculate</em></button>
-            &nbsp &nbsp &nbsp
-            <button id="reset" onclick="reset()"><em>Reset</em></button>
-         </section>
-		 <script src="main.js"></script>
-      </main>
-	  </center>
-   </body>
-</html>
