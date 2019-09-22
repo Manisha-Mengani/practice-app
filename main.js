@@ -1,4 +1,4 @@
-  <script>
+  
 	  
 		// Constants
          const TAX_RATE = 5.5;
@@ -43,4 +43,4 @@
          document.querySelector('#tax').innerHTML = ZERO.toFixed(2);
          document.querySelector('#grand-total').innerHTML = ZERO.toFixed(2);
          }
-      </script>
+      
